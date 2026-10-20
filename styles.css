@@ -716,33 +716,33 @@ html { scroll-behavior: auto; }
   .justina-return { padding: 14px; font-size: 14px; gap: 10px; }
 }
 
-/* Goulart signage redrawn as self-contained vector artwork. */
+/* Official Goulart signatures traced from the supplied vector PDF. */
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
-.brand-navbar { width: 280px; min-height: 56px; }
+.brand-navbar { width: 205px; min-height: 82px; }
 .brand-logo,.brand-signature,.justina-goulart>img { display: block; width: 100%; height: auto; }
 .brand-logo-dark { display: none; }
 .header.is-scrolled .brand-logo-light { display: none; }
 .header.is-scrolled .brand-logo-dark { display: block; }
 .header.is-menu-open .brand-logo-light { display: block; }
 .header.is-menu-open .brand-logo-dark { display: none; }
-.brand-footer { width: min(100%,360px); }
+.brand-footer { width: min(100%,220px); }
 .footer-positioning { margin-top: 24px; }
-.justina-goulart { display: inline-flex; align-items: center; width: 220px; min-height: 44px; flex-shrink: 0; }
+.justina-goulart { display: inline-flex; align-items: center; width: 200px; min-height: 80px; flex-shrink: 0; }
 @media (min-width: 1024px) and (max-width: 1150px) {
-  .brand-navbar { width: 248px; min-height: 50px; }
+  .brand-navbar { width: 190px; min-height: 76px; }
 }
 @media (max-width: 1023px) {
-  .brand-navbar { width: 232px; min-height: 47px; }
+  .brand-navbar { width: 185px; min-height: 74px; }
 }
 @media (max-width: 760px) {
-  .brand-navbar { width: 200px; min-height: 40px; }
-  .brand-footer { width: min(100%,340px); }
+  .brand-navbar { width: 165px; min-height: 66px; }
+  .brand-footer { width: min(100%,200px); }
 }
 @media (max-width: 600px) {
-  .justina-goulart { width: 180px; }
+  .justina-goulart { width: 165px; min-height: 66px; }
 }
 @media (max-width: 370px) {
-  .brand-navbar { width: 160px; min-height: 34px; }
+  .brand-navbar { width: 140px; min-height: 56px; }
   .justina-header { gap: 16px; }
-  .justina-goulart { width: 142px; }
+  .justina-goulart { width: 140px; min-height: 56px; }
 }

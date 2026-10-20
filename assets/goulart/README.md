@@ -4,11 +4,11 @@ Identidade oficial extraída do PDF **Goulart Advocacia - logo marca em curvas (
 
 | Arquivo | Uso |
 | --- | --- |
-| `logo-completa.svg` | Assinatura oficial verde e dourada para fundo claro. |
-| `logo-completa-clara.svg` | Assinatura oficial branca e dourada para fundo escuro. |
-| `logo-horizontal.svg` | Composição compacta com símbolo e nome oficiais para o navbar claro e a Justina. |
-| `logo-horizontal-clara.svg` | Versão compacta branca e dourada para o navbar sobre a hero. |
-| `selo-circular-claro.svg` | Selo oficial branco e dourado, usado na seção do escritório. |
+| `logo-completa.svg` | Assinatura oficial verde e dourada no cabeçalho claro e na Justina. |
+| `logo-completa-clara.svg` | Assinatura oficial branca e dourada no cabeçalho sobre a hero. |
+| `logo-horizontal.svg` | Composição compacta alternativa com símbolo e nome oficiais para fundo claro. |
+| `logo-horizontal-clara.svg` | Composição compacta alternativa branca e dourada para fundo escuro. |
+| `selo-circular-claro.svg` | Selo oficial branco e dourado, usado na seção do escritório e no rodapé. |
 | `simbolo.svg` | Símbolo oficial isolado, dourado. |
 | `favicon.svg` | Símbolo vetorial para a aba do site. |
 
