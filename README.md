@@ -23,7 +23,7 @@ As quatro seções seguintes organizam o conteúdo:
 
 O cliente confirmou que não dispõe de uma contagem consolidada nem de uma relação de cidades/estados com clientes. Os pontos do mapa são ilustrativos, como indicado na legenda, e não correspondem a endereços, quantidades ou distribuição efetiva de clientes. O seletor destaca a abrangência do atendimento nacional, sem atribuir clientes às UFs. A geometria simplificada vem da [API de Malhas Geográficas do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3), [Brasil com divisões estaduais](https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?intrarregiao=UF&formato=application/vnd.geo%2Bjson&qualidade=minima), consultada em 17/10/2026. A geometria foi projetada e incorporada como SVG no HTML; não existe consulta externa em tempo de execução.
 
-O rodapé reúne marca, posicionamento, navegação, Instagram, LinkedIn e WhatsApp em uma composição de três colunas no desktop. No celular, os grupos se empilham e os links de navegação se distribuem em linhas. O botão flutuante de WhatsApp permanece disponível, com área de toque de 56 px no celular, foco visível e margem para a área segura da tela.
+O rodapé reúne marca, navegação, Instagram, LinkedIn e um botão de WhatsApp em uma composição de três colunas no desktop. No celular, os grupos se empilham e os links de navegação se distribuem em linhas. O botão flutuante de WhatsApp permanece disponível, com área de toque de 56 px no celular, foco visível e margem para a área segura da tela. O número de celular aparece apenas no destino dos links de contato, não como texto na página.
 
 A composição usa uma largura comum, colunas alinhadas, verde profundo, branco mineral, verde suave e bronze. Lora 500 nos títulos principais e Source Sans 3 nos títulos de conteúdo e textos. Fontes locais e licenças SIL OFL em `assets/fonts/`.
 
@@ -44,7 +44,7 @@ Não há imagens nem fontes remotas usadas na página.
 - Hero com uma sequência de entrada e fotografia em toda a largura.
 - Seletor de áreas com `aria-pressed`, foco visível, anúncio da seleção e transição de conteúdo.
 - Assunto selecionado identificado na seção de contato e usado para preencher uma mensagem no WhatsApp; o envio é feito pelo visitante.
-- Botões “Fale com a equipe”, contato do rodapé e botão flutuante abrem `https://wa.me/5549998126093`. Número confirmado pelo cliente: +55 49 99812-6093.
+- Botões “Fale com a equipe”, contato do rodapé e botão flutuante abrem o WhatsApp do escritório.
 - Instagram e LinkedIn com ícones SVG locais e nomes acessíveis. Links externos abrem em nova aba.
 - Indicador do processo sincronizado à leitura, horizontal no desktop e vertical no celular.
 - Mapa nacional com 27 divisões estaduais, seleção de região por botões nativos, `aria-pressed`, descrição e anúncio de seleção. A animação inicia quando o mapa entra na tela e termina sem repetição contínua; com movimento reduzido ou sem JavaScript, o mapa permanece estático e legível.
