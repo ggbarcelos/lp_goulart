@@ -154,6 +154,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .office .section-label:before { background: var(--bronze); }
 .office-heading { margin-bottom: 64px; }
 .office-identity h2 { max-width: 20ch; }
+.office-seal { display: block; width: clamp(112px,10vw,144px); height: auto; margin-top: 36px; }
 .office-introduction { padding-top: 48px; }
 .office-introduction>p { color: var(--on-dark-muted); font-size: 18px; line-height: 1.8; max-width: 47ch; }
 .office-introduction>p:first-child { color: var(--on-dark); font-size: 20px; line-height: 1.65; }
