@@ -154,6 +154,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .office .section-label:before { background: var(--bronze); }
 .office-heading { margin-bottom: 64px; }
 .office-identity h2 { max-width: 20ch; }
+.office-seal { display: block; width: clamp(112px,10vw,144px); height: auto; margin-top: 36px; }
 .office-introduction { padding-top: 48px; }
 .office-introduction>p { color: var(--on-dark-muted); font-size: 18px; line-height: 1.8; max-width: 47ch; }
 .office-introduction>p:first-child { color: var(--on-dark); font-size: 20px; line-height: 1.65; }
@@ -177,7 +178,7 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .contact { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: clamp(56px,7vw,104px); background: #f4f6f2; }
 .contact-invitation { min-width: 0; padding-top: 8px; }
 .contact h2 { max-width: 17ch; }
-.contact-invitation>p:not(.section-label):not(.selected-subject):not(.contact-channel) { max-width: 45ch; margin-top: 28px; color: var(--muted); font-size: 18px; line-height: 1.8; }
+.contact-invitation>p:not(.section-label):not(.selected-subject) { max-width: 45ch; margin-top: 28px; color: var(--muted); font-size: 18px; line-height: 1.8; }
 .selected-subject { margin-top: 24px; padding: 14px 18px; border-left: 3px solid #92723e; background: #e7eddf; color: var(--bronze-ink); font-size: 16px; line-height: 1.65; }
 .contact-button { display: flex; align-items: center; justify-content: space-between; gap: 24px; width: min(100%,440px); min-height: 92px; margin-top: 30px; padding: 20px 22px 20px 26px; background: var(--forest); color: var(--on-dark); border-radius: 3px; transition: background .25s; }
 .contact-button>span:first-child { min-width: 0; font-size: 20px; font-weight: 600; line-height: 1.35; }
@@ -187,7 +188,6 @@ svg { width: 24px; height: 24px; fill: none; stroke: currentColor; stroke-width:
 .contact-button:hover { background: var(--deep); }
 .contact-button:hover .contact-button-icon { background: var(--bronze); color: var(--deep); }
 .contact-button:hover svg { transform: translate(2px,-2px); }
-.contact-channel { margin-top: 12px; color: var(--muted); font-size: 14px; line-height: 1.6; }
 .contact-information { min-width: 0; padding: 36px 40px; border: 1px solid #d0ddcc; border-radius: 5px; background: #e7eee2; }
 .contact-location { display: flex; align-items: start; gap: 20px; }
 .location-icon { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid #b0c1a8; border-radius: 50%; }
@@ -313,7 +313,7 @@ html { scroll-padding-top: 104px; }
 .contact { grid-template-columns: 1fr; gap: 36px; }
 .contact-invitation { padding-top: 0; }
 .contact h2 { max-width: 19ch; }
-.contact-invitation>p:not(.section-label):not(.selected-subject):not(.contact-channel) { font-size: 17px; line-height: 1.8; margin-top: 24px; }
+.contact-invitation>p:not(.section-label):not(.selected-subject) { font-size: 17px; line-height: 1.8; margin-top: 24px; }
 .contact-button { width: min(100%,440px); min-height: 86px; margin-top: 26px; padding: 18px 22px; }
 .contact-button>span:first-child { font-size: 19px; }
 .contact-information { padding: 30px; }
@@ -455,7 +455,6 @@ html { scroll-behavior: auto; }
 .footer { --focus: #e6cf9d; padding: 76px var(--gutter) 28px; background: var(--deep); color: var(--on-dark); }
 .footer-main { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(150px,.7fr) minmax(0,1.1fr); align-items: start; gap: 64px; }
 .footer-identity,.footer-navigation,.footer-attendance { min-width: 0; }
-.footer-positioning { max-width: 20ch; margin-top: 28px; color: #d4e0d5; font: 500 27px/1.35 var(--serif); letter-spacing: -.015em; text-wrap: balance; }
 .footer-socials { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 26px; }
 .footer-socials>a { display: inline-flex; align-items: center; gap: 10px; min-height: 48px; color: var(--on-dark); font-size: 15px; line-height: 1.5; }
 .footer-social-icon { display: grid; place-items: center; width: 44px; height: 44px; flex-shrink: 0; border: 1px solid #c5d6c850; border-radius: 50%; transition: background .2s,border-color .2s,color .2s; }
@@ -465,13 +464,10 @@ html { scroll-behavior: auto; }
 .footer-links { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; }
 .footer-links>a { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 7px 0; color: var(--on-dark-muted); font-size: 17px; line-height: 1.6; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 5px; transition: color .2s,text-decoration-color .2s; }
 .footer-links>a:hover { color: var(--on-dark); text-decoration-color: var(--bronze); }
-.footer-whatsapp { display: flex; align-items: center; gap: 14px; min-height: 64px; max-width: 100%; }
-.footer-whatsapp-icon { display: grid; place-items: center; flex-shrink: 0; width: 48px; height: 48px; border: 1px solid #c5d6c850; border-radius: 50%; color: var(--on-dark); transition: background .2s,border-color .2s,color .2s; }
-.footer-whatsapp-icon>svg { width: 27px; height: 27px; }
-.footer-whatsapp>span:last-child { min-width: 0; }
-.footer-whatsapp strong { display: block; color: var(--on-dark); font-size: 24px; font-weight: 600; line-height: 1.35; letter-spacing: -.02em; }
-.footer-whatsapp small { display: block; margin-top: 6px; color: var(--on-dark-muted); font-size: 14px; line-height: 1.6; }
-.footer-whatsapp:hover .footer-whatsapp-icon { border-color: var(--bronze); background: var(--bronze); color: var(--deep); }
+.footer-whatsapp { display: inline-flex; align-items: center; gap: 12px; min-height: 56px; max-width: 100%; padding: 10px 18px; border: 1px solid #c5d6c880; border-radius: 4px; color: var(--on-dark); font-size: 16px; font-weight: 600; line-height: 1.4; transition: background .2s,border-color .2s; }
+.footer-whatsapp-icon { display: grid; place-items: center; flex-shrink: 0; width: 28px; height: 28px; }
+.footer-whatsapp-icon>svg { width: 26px; height: 26px; }
+.footer-whatsapp:hover { border-color: var(--bronze); background: #ffffff14; }
 .footer-location-row { display: flex; align-items: center; justify-content: space-between; gap: 18px; margin-top: 28px; padding-top: 22px; border-top: 1px solid #c5d6c82b; }
 .footer-location-row>p { color: var(--on-dark-muted); font-size: 15px; line-height: 1.6; }
 .back-top { display: grid; place-items: center; flex-shrink: 0; width: 44px; height: 44px; border: 1px solid #c5d6c850; border-radius: 50%; transition: background .2s; }
@@ -490,25 +486,19 @@ html { scroll-behavior: auto; }
 .whatsapp-float:hover .whatsapp-tooltip,.whatsapp-float:focus-visible .whatsapp-tooltip { opacity: 1; visibility: visible; transform: translate(0,-50%); }
 @media (min-width: 961px) and (max-width: 1150px) {
   .footer-main { gap: 40px; }
-  .footer-whatsapp strong { font-size: 22px; }
-  .footer-whatsapp { gap: 12px; }
-  .footer-whatsapp-icon { width: 44px; height: 44px; }
 }
 @media (min-width: 761px) and (max-width: 960px) {
   .footer-main { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 40px; }
   .footer-identity { grid-column: 1/-1; display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; }
   .footer-socials { flex-shrink: 0; margin-top: 0; gap: 14px; }
-  .footer-whatsapp strong { font-size: 23px; }
 }
 @media (max-width: 760px) {
   .footer { padding: 56px var(--gutter) calc(104px + env(safe-area-inset-bottom,0px)); }
   .footer-main { grid-template-columns: 1fr; gap: 36px; }
-  .footer-positioning { margin-top: 24px; font-size: 26px; max-width: 22ch; }
   .footer-socials { margin-top: 22px; gap: 12px 22px; }
   .footer h3 { margin: 0 0 14px; }
   .footer-links { flex-direction: row; flex-wrap: wrap; gap: 4px 24px; }
   .footer-links>a { min-height: 44px; font-size: 16px; }
-  .footer-whatsapp strong { font-size: 24px; }
   .footer-location-row { margin-top: 22px; padding-top: 20px; }
   .footer-bottom { flex-direction: column; gap: 10px; margin-top: 36px; padding-top: 24px; padding-right: 0; font-size: 13px; }
   .whatsapp-float { right: max(16px,env(safe-area-inset-right,0px)); bottom: calc(16px + env(safe-area-inset-bottom,0px)); width: 56px; height: 56px; }
@@ -516,9 +506,7 @@ html { scroll-behavior: auto; }
   .whatsapp-tooltip { display: none; }
 }
 @media (max-width: 370px) {
-  .footer-whatsapp { gap: 12px; }
-  .footer-whatsapp strong { font-size: 22px; }
-  .footer-whatsapp-icon { width: 44px; height: 44px; }
+  .footer-whatsapp { font-size: 15px; padding-inline: 14px; }
 }
 
 /* National presence: a bronze-pinned territory, inspired by the office's physical map. */
@@ -715,33 +703,32 @@ html { scroll-behavior: auto; }
   .justina-return { padding: 14px; font-size: 14px; gap: 10px; }
 }
 
-/* Goulart signage redrawn as self-contained vector artwork. */
+/* Official Goulart signatures traced from the supplied vector PDF. */
 .brand { display: inline-flex; align-items: center; flex-shrink: 0; }
-.brand-navbar { width: 280px; min-height: 56px; }
+.brand-navbar { width: 205px; min-height: 82px; }
 .brand-logo,.brand-signature,.justina-goulart>img { display: block; width: 100%; height: auto; }
 .brand-logo-dark { display: none; }
 .header.is-scrolled .brand-logo-light { display: none; }
 .header.is-scrolled .brand-logo-dark { display: block; }
 .header.is-menu-open .brand-logo-light { display: block; }
 .header.is-menu-open .brand-logo-dark { display: none; }
-.brand-footer { width: min(100%,360px); }
-.footer-positioning { margin-top: 24px; }
-.justina-goulart { display: inline-flex; align-items: center; width: 220px; min-height: 44px; flex-shrink: 0; }
+.brand-footer { width: min(100%,220px); }
+.justina-goulart { display: inline-flex; align-items: center; width: 200px; min-height: 80px; flex-shrink: 0; }
 @media (min-width: 1024px) and (max-width: 1150px) {
-  .brand-navbar { width: 248px; min-height: 50px; }
+  .brand-navbar { width: 190px; min-height: 76px; }
 }
 @media (max-width: 1023px) {
-  .brand-navbar { width: 232px; min-height: 47px; }
+  .brand-navbar { width: 185px; min-height: 74px; }
 }
 @media (max-width: 760px) {
-  .brand-navbar { width: 200px; min-height: 40px; }
-  .brand-footer { width: min(100%,340px); }
+  .brand-navbar { width: 165px; min-height: 66px; }
+  .brand-footer { width: min(100%,200px); }
 }
 @media (max-width: 600px) {
-  .justina-goulart { width: 180px; }
+  .justina-goulart { width: 165px; min-height: 66px; }
 }
 @media (max-width: 370px) {
-  .brand-navbar { width: 160px; min-height: 34px; }
+  .brand-navbar { width: 140px; min-height: 56px; }
   .justina-header { gap: 16px; }
-  .justina-goulart { width: 142px; }
+  .justina-goulart { width: 140px; min-height: 56px; }
 }

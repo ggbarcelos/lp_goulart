@@ -1,14 +1,17 @@
 # Marca Goulart Advocacia
 
-Reprodução vetorial baseada na fotografia do letreiro fornecida pelo cliente em 17/10/2026. O símbolo foi redesenhado em curvas Bézier. Os contornos do nome foram extraídos visualmente da foto, com correção aproximada de perspectiva e suavização. A assinatura menor foi reconstruída com letras serifadas em contornos para preservar a leitura e a redação da referência; a tipografia dessa linha é uma aproximação. O último “a”, cortado na borda da fotografia, foi reconstruído a partir da ocorrência completa da mesma letra no nome. Não é o arquivo vetorial original do escritório.
+Identidade oficial extraída do PDF **Goulart Advocacia - logo marca em curvas (1).pdf**, enviado pelo cliente em 20/10/2026. As duas imagens **WhatsApp Image 2026-10-19 at 09.27.40 (3).jpeg** e **(4).jpeg** foram usadas para conferir o selo circular e o símbolo isolado. Os SVGs preservam os contornos vetoriais do PDF; não usam fontes externas, fundo ou imagens incorporadas. Assim, continuam nítidos em qualquer tamanho.
 
-- `logo-horizontal.svg`: composição compacta, com texto verde, para o navbar claro e o retorno ao escritório na Justina.
-- `logo-horizontal-clara.svg`: composição compacta com texto claro, para o navbar sobre o fundo escuro.
-- `logo-completa.svg`: assinatura com símbolo superior, nome e “Direito agrário e do agronegócio”, para fundos claros.
-- `logo-completa-clara.svg`: assinatura completa para o rodapé escuro.
-- `simbolo.svg`: símbolo isolado, dourado e transparente.
-- `favicon.svg`: símbolo sobre fundo verde para a aba do site institucional.
+| Arquivo | Uso |
+| --- | --- |
+| `logo-completa.svg` | Assinatura oficial verde e dourada no cabeçalho claro e na Justina. |
+| `logo-completa-clara.svg` | Assinatura oficial branca e dourada no cabeçalho sobre a hero. |
+| `logo-horizontal.svg` | Composição compacta alternativa com símbolo e nome oficiais para fundo claro. |
+| `logo-horizontal-clara.svg` | Composição compacta alternativa branca e dourada para fundo escuro. |
+| `selo-circular-claro.svg` | Selo oficial branco e dourado, usado na seção do escritório e no rodapé. |
+| `simbolo.svg` | Símbolo oficial isolado, dourado. |
+| `favicon.svg` | Símbolo vetorial para a aba do site. |
 
-Paleta: verde `#153c32`, dourado `#c5a35e`, dourado sobre fundo escuro `#d5bd80`, texto claro `#f5f7f0`. Todos os desenhos e letras são paths; não dependem de fontes, scripts ou recursos externos. A fotografia original foi preservada e não é servida pelo site. Reflexos e o relevo físico do letreiro não integram a assinatura digital.
+`logo-completa-transparente.png` (3200 × 1277 px), `simbolo-transparente.png` (2048 × 2077 px) e `selo-circular-transparente.png` (2048 × 2119 px) são alternativas rasterizadas diretamente dos vetores oficiais, com canal alfa. São adequadas para aplicativos que não aceitam SVG. A margem transparente em torno das formas evita cortes. Evite aumentar os PNGs além do tamanho nativo; para impressão ou tamanhos maiores, use os SVGs.
 
-Se o arquivo original da marca for disponibilizado, ele deve substituir esta reprodução, mantendo as composições e os tamanhos de aplicação adequados.
+O PDF define verde `#013334` e dourado `#a58c56`; a assinatura clara usa branco `#ffffff`. As imagens JPEG têm leve variação de cor por causa da exportação/compressão, por isso os arquivos finais seguem o vetor original.

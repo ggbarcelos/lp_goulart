@@ -23,7 +23,7 @@ As quatro seções seguintes organizam o conteúdo:
 
 O cliente confirmou que não dispõe de uma contagem consolidada nem de uma relação de cidades/estados com clientes. Os pontos do mapa são ilustrativos, como indicado na legenda, e não correspondem a endereços, quantidades ou distribuição efetiva de clientes. O seletor destaca a abrangência do atendimento nacional, sem atribuir clientes às UFs. A geometria simplificada vem da [API de Malhas Geográficas do IBGE](https://servicodados.ibge.gov.br/api/docs/malhas?versao=3), [Brasil com divisões estaduais](https://servicodados.ibge.gov.br/api/v3/malhas/paises/BR?intrarregiao=UF&formato=application/vnd.geo%2Bjson&qualidade=minima), consultada em 17/10/2026. A geometria foi projetada e incorporada como SVG no HTML; não existe consulta externa em tempo de execução.
 
-O rodapé reúne marca, posicionamento, navegação, Instagram, LinkedIn e WhatsApp em uma composição de três colunas no desktop. No celular, os grupos se empilham e os links de navegação se distribuem em linhas. O botão flutuante de WhatsApp permanece disponível, com área de toque de 56 px no celular, foco visível e margem para a área segura da tela.
+O rodapé reúne marca, navegação, Instagram, LinkedIn e um botão de WhatsApp em uma composição de três colunas no desktop. No celular, os grupos se empilham e os links de navegação se distribuem em linhas. O botão flutuante de WhatsApp permanece disponível, com área de toque de 56 px no celular, foco visível e margem para a área segura da tela. O número de celular aparece apenas no destino dos links de contato, não como texto na página.
 
 A composição usa uma largura comum, colunas alinhadas, verde profundo, branco mineral, verde suave e bronze. Lora 500 nos títulos principais e Source Sans 3 nos títulos de conteúdo e textos. Fontes locais e licenças SIL OFL em `assets/fonts/`.
 
@@ -35,7 +35,7 @@ A hero usa `assets/produtor-rural-v1.jpg`. O painel de atuação usa `assets/doc
 
 A identidade da Justina usa os PNGs fornecidos pelo cliente em `assets/justina/logo.png` e `assets/justina/icone.png`. Os arquivos foram copiados sem alteração; seus espaços transparentes são compensados nos elementos de apresentação em CSS. O ícone aparece no navbar e no favicon da página Justina; a logo completa aparece na apresentação. O monograma provisório foi removido.
 
-A marca do escritório foi reproduzida em SVG a partir da fotografia do letreiro enviada pelo cliente em 17/10/2026. O símbolo G com forma de folha foi redesenhado; o nome foi vetorizado com correção aproximada de perspectiva e a assinatura menor foi reconstruída em contornos serifados para preservar a leitura. O navbar usa uma composição horizontal e alterna entre texto claro e verde conforme o fundo. O rodapé usa a assinatura completa com o símbolo acima do nome e “Direito agrário e do agronegócio”. O retorno ao escritório na Justina usa a mesma identidade; o site institucional ganhou um favicon com o símbolo. Os arquivos transparentes e as notas de reprodução estão em `assets/goulart/`. As letras são contornos vetoriais, sem dependência de fontes externas. Trata-se de uma reprodução baseada na foto, que poderá ser substituída pelo vetor original quando estiver disponível.
+A marca do escritório usa os contornos oficiais do PDF fornecido pelo cliente em 20/10/2026. As imagens JPEG recebidas foram usadas para conferir o símbolo isolado e o selo circular. O cabeçalho exibe a assinatura completa, alternando as versões clara e verde conforme o fundo. A seção do escritório e o rodapé exibem o selo circular. O retorno ao escritório na Justina usa a assinatura completa, e o favicon traz o símbolo. Os SVGs não têm fundo e mantêm a nitidez em qualquer resolução; há também PNGs grandes com transparência em `assets/goulart/`. As referências dos arquivos e da folha de estilos receberam nova versão para atualizar o cache do navegador. Detalhes de uso e dimensões estão no README dessa pasta.
 
 Não há imagens nem fontes remotas usadas na página.
 
@@ -44,7 +44,7 @@ Não há imagens nem fontes remotas usadas na página.
 - Hero com uma sequência de entrada e fotografia em toda a largura.
 - Seletor de áreas com `aria-pressed`, foco visível, anúncio da seleção e transição de conteúdo.
 - Assunto selecionado identificado na seção de contato e usado para preencher uma mensagem no WhatsApp; o envio é feito pelo visitante.
-- Botões “Fale com a equipe”, contato do rodapé e botão flutuante abrem `https://wa.me/5549998126093`. Número confirmado pelo cliente: +55 49 99812-6093.
+- Botões “Fale com a equipe”, contato do rodapé e botão flutuante abrem o WhatsApp do escritório.
 - Instagram e LinkedIn com ícones SVG locais e nomes acessíveis. Links externos abrem em nova aba.
 - Indicador do processo sincronizado à leitura, horizontal no desktop e vertical no celular.
 - Mapa nacional com 27 divisões estaduais, seleção de região por botões nativos, `aria-pressed`, descrição e anúncio de seleção. A animação inicia quando o mapa entra na tela e termina sem repetição contínua; com movimento reduzido ou sem JavaScript, o mapa permanece estático e legível.
@@ -58,4 +58,4 @@ As verificações de estrutura, medidas tipográficas e estado no DOM não subst
 
 ## Conteúdo e publicação
 
-Base institucional: [perfil oficial no LinkedIn](https://br.linkedin.com/company/goulartadvocacia), complementado pelas orientações do cliente. Marca reproduzida a partir do letreiro fotografado, redes sociais já informadas e contato pelo WhatsApp fornecido pelo cliente. Não há formulário nem coleta de dados. Confirmar a redação institucional, o escopo dos serviços e a identificação profissional/OAB antes da publicação. Não há depoimentos, resultados ou promessa de êxito inventados.
+Base institucional: [perfil oficial no LinkedIn](https://br.linkedin.com/company/goulartadvocacia), complementado pelas orientações do cliente. Marca oficial em curvas fornecida pelo cliente, redes sociais já informadas e contato pelo WhatsApp fornecido pelo cliente. Não há formulário nem coleta de dados. Confirmar a redação institucional, o escopo dos serviços e a identificação profissional/OAB antes da publicação. Não há depoimentos, resultados ou promessa de êxito inventados.
